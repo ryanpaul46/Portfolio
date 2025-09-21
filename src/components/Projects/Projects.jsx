@@ -1,4 +1,6 @@
 import React from 'react';
+import LoginImg from "../../assets/images/Login.png";
+import PortfolioImg from "../../assets/images/Portfolio.png";
 
 const Projects = () => {
   // Sample project data
@@ -7,7 +9,7 @@ const Projects = () => {
       id: 1,
       title: 'DOLE-TUPAD-Validator',
       description: 'A full-stack application designed to validate DOLE TUPAD beneficiaries',
-      image: '.assets/images/Login.png',
+      image: LoginImg,
       tags: ['React', 'Node.js', 'PostgreSQL', 'Fastify'],
       demoLink: 'https://dole-tupad-validator-988u.onrender.com/login',
       codeLink: 'https://github.com/ryanpaul46/DOLE-TUPAD-VALIDATOR'
@@ -16,7 +18,7 @@ const Projects = () => {
       id: 2,
       title: 'Portfolio Website',
       description: 'A personal portfolio website showcasing my projects and skills',
-      image: 'https://via.placeholder.com/600x400',
+      image: PortfolioImg,
       tags: ['React', 'Bootstrap', 'CSS'],
       demoLink: '#',
       codeLink: '#'
@@ -79,7 +81,7 @@ const Projects = () => {
             <div className="card h-100 shadow-sm">
               <img src={project.image} className="card-img-top" alt={project.title} />
               <div className="card-body">
-                <h5 className="card-title">{project.title}</h5>
+                <h5 className="card-title fw-bold">{project.title}</h5>
                 <p className="card-text">{project.description}</p>
                 <div className="d-flex flex-wrap mb-3">
                   {project.tags.map((tag, index) => (

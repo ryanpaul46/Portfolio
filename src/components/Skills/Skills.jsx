@@ -86,13 +86,12 @@ const Skills = () => {
             <span className="badge bg-secondary p-2">Responsive Design</span>
             <span className="badge bg-secondary p-2">UI/UX Design</span>
             <span className="badge bg-secondary p-2">RESTful APIs</span>
-            <span className="badge bg-secondary p-2">GraphQL</span>
-            <span className="badge bg-secondary p-2">TypeScript</span>
             <span className="badge bg-secondary p-2">Redux</span>
-            <span className="badge bg-secondary p-2">SASS/SCSS</span>
             <span className="badge bg-secondary p-2">Jest</span>
             <span className="badge bg-secondary p-2">Docker</span>
             <span className="badge bg-secondary p-2">AWS</span>
+            <span className="badge bg-secondary p-2">Certified JavaScript Developer</span>
+            <span className="badge bg-secondary p-2">Computer Systems Servicing</span>
           </div>
         </div>
       </div>

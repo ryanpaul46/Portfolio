@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -48,7 +48,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-light ${scrolled ? 'bg-white shadow-sm' : 'bg-transparent'} fixed-top transition-all`}>
+    <nav className={`navbar navbar-expand-lg navbar-${darkMode ? 'dark' : 'light'} ${scrolled ? (darkMode ? 'bg-dark shadow' : 'bg-white shadow-sm') : 'bg-transparent'} fixed-top transition-all`}>
       <div className="container">
         <a className="navbar-brand fw-bold" href="#home" onClick={(e) => handleNavClick(e, 'home')}>Portfolio</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,6 +100,15 @@ const Navbar = () => {
               >
                 Contact
               </a>
+            </li>
+            <li className="nav-item">
+              <button
+                className="nav-link btn btn-outline-secondary"
+                onClick={() => setDarkMode(!darkMode)}
+                style={{ color: darkMode ? 'white' : 'black' }}
+              >
+                {darkMode ? '☀️' : '🌙'}
+              </button>
             </li>
           </ul>
         </div>

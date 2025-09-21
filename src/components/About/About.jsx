@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfileImg from "../../assets/images/Profile.png";
 
 const About = () => {
   return (
@@ -19,7 +20,7 @@ const About = () => {
           <div className="about-image-container text-center">
             {/* Replace with your image */}
             <img 
-              src="https://via.placeholder.com/400x400" 
+              src={ProfileImg}
               alt="Profile" 
               className="img-fluid rounded-circle shadow-lg" 
               style={{ maxWidth: '80%' }}
@@ -30,14 +31,13 @@ const About = () => {
         <div className="col-md-7">
           <h3 className="mb-4">Web Developer & Designer</h3>
           <p className="lead mb-4 text-justify">
-            I’m Ryan Paul Collado, an IT Specialist and Creative Designer from Pangasinan. 
-            I combine tech expertise in computer systems, networking, 
-            and full-stack web development with creative skills in graphic design, video editing, 
-            and photography.With certifications in Civil Service Professional Eligibility and TESDA Computer Systems Servicing NC II, 
+            I’m Ryan Paul Collado, an IT Specialist from Pangasinan. 
+            I combine tech expertise in computer systems, networking, and full-stack web development with creative skills in graphic design, video editing, 
+            and photography. With certifications in Civil Service Professional Eligibility and TESDA Computer Systems Servicing NC II, 
             I bring both technical reliability and creative innovation to every project I take on.I build systems that work and designs that inspire.
           </p>
           
-          <p className="mb-4">
+          <p className="mb-4 text-justify">
             My journey in web development began several years ago, and since then, I've worked on various projects 
             ranging from simple landing pages to complex web applications. I enjoy the process of turning ideas into 
             reality through code and design.

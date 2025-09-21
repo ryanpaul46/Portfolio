@@ -84,3 +84,75 @@ section {
 {
   text-align:justify;
 }
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark section {
+  color: #ffffff;
+}
+
+body.dark #home {
+  background-color: #1e1e1e;
+}
+
+body.dark #about {
+  background-color: #2d2d2d;
+}
+
+body.dark #projects {
+  background-color: #1e1e1e;
+}
+
+body.dark #skills {
+  background-color: #2d2d2d;
+}
+
+body.dark #contact {
+  background-color: #1e1e1e;
+}
+
+body.dark .navbar-light {
+  background-color: #333 !important;
+  color: #ffffff;
+}
+
+body.dark .nav-link {
+  color: #ffffff !important;
+}
+
+body.dark .navbar-brand {
+  color: #ffffff !important;
+}
+
+body.dark .btn-outline-secondary {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.dark .btn-outline-secondary:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.dark .card {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-color: #444;
+}
+
+body.dark .form-control {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-color: #444;
+}
+
+body.dark .form-control:focus {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

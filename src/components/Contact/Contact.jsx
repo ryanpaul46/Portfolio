@@ -184,7 +184,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="h6 mb-1">Website</h4>
-                  <p>www.yourwebsite.com</p>
+                  <p>https://ryanpaul46.github.io/Portfolio/</p>
                 </div>
               </div>
               

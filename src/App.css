@@ -156,3 +156,29 @@ body.dark .form-control:focus {
   border-color: #007bff;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+
+/* Dark mode fixes for icons, buttons, and cards */
+body.dark .bi {
+  color: #ffffff !important;
+}
+
+body.dark .card-footer {
+  background-color: #2d2d2d !important;
+  color: #ffffff !important;
+  border-color: #444 !important;
+}
+
+body.dark .btn-outline-dark {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+body.dark .btn-outline-dark:hover {
+  background-color: #ffffff !important;
+  color: #121212 !important;
+  border-color: #ffffff !important;
+}
+
+body.dark .badge {
+  color: #ffffff !important;
+}

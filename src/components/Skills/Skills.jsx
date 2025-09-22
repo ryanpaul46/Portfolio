@@ -83,13 +83,17 @@ const Skills = () => {
         <div className="col-12 text-center">
           <h3 className="h4 mb-4">Additional Skills & Certifications</h3>
           <div className="d-flex flex-wrap justify-content-center gap-2">
-            <span className="badge bg-secondary p-2">Responsive Design</span>
-            <span className="badge bg-secondary p-2">UI/UX Design</span>
-            <span className="badge bg-secondary p-2">RESTful APIs</span>
-            <span className="badge bg-secondary p-2">Redux</span>
-            <span className="badge bg-secondary p-2">Jest</span>
-            <span className="badge bg-secondary p-2">Docker</span>
-            <span className="badge bg-secondary p-2">AWS</span>
+             {/* Frontend */}
+            <span className="badge bg-primary p-2">Responsive Design</span>
+            <span className="badge bg-primary p-2">UI/UX Design</span>
+            <span className="badge bg-primary p-2">Redux</span>
+            {/* Backend */}
+            <span className="badge bg-success p-2">RESTful APIs</span>
+            <span className="badge bg-success p-2">Fastify</span>
+            {/* DevOps & Cloud */}
+           <span className="badge bg-warning text-dark p-2">Docker</span>
+           <span className="badge bg-warning text-dark p-2">AWS</span>
+           {/* Certifications */}
             <span className="badge bg-secondary p-2">Certified JavaScript Developer</span>
             <span className="badge bg-secondary p-2">Computer Systems Servicing</span>
           </div>

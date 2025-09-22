@@ -1,6 +1,10 @@
 import React from 'react';
 import LoginImg from "../../assets/images/Login.png";
 import PortfolioImg from "../../assets/images/Portfolio.png";
+import LyriKodeImg from "../../assets/images/LyriKode.png";
+import QuoteImg from "../../assets/images/Quote.png";
+import LibraryImg from "../../assets/images/Library.png";
+import PhonebookImg from "../../assets/images/Phonebook.png";
 
 const Projects = () => {
   // Sample project data
@@ -25,37 +29,37 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Task Management App',
-      description: 'A task management application with drag-and-drop functionality',
-      image: 'https://via.placeholder.com/600x400',
-      tags: ['React', 'Redux', 'Firebase'],
-      demoLink: '#',
-      codeLink: '#'
+      title: 'LyriKode',
+      description: 'A simple music lyrics search application',
+      image: LyriKodeImg,
+      tags: ['Javascript', 'CSS', 'API'],
+      demoLink: 'https://ryanpaul46.github.io/LyriKode-MP2/',
+      codeLink: 'https://github.com/ryanpaul46/LyriKode-MP2/settings/pages'
     },
     {
       id: 4,
-      title: 'Weather Dashboard',
-      description: 'A weather dashboard that displays current and forecasted weather data',
-      image: 'https://via.placeholder.com/600x400',
+      title: 'Quote Generator',
+      description: 'A web app that generates random inspirational quotes',
+      image: QuoteImg,
       tags: ['JavaScript', 'API', 'CSS'],
-      demoLink: '#',
-      codeLink: '#'
+      demoLink: 'https://ryanpaul46.github.io/Quote-Generator/',
+      codeLink: 'https://github.com/ryanpaul46/Quote-Generator'
     },
     {
       id: 5,
-      title: 'Recipe Finder',
-      description: 'An application that allows users to search for recipes based on ingredients',
-      image: 'https://via.placeholder.com/600x400',
-      tags: ['React', 'API', 'Styled Components'],
+      title: 'Library App',
+      description: 'A basic library app to manage book collections',
+      image: LibraryImg,
+      tags: ['HTML', 'Javascript', 'CSS'],
       demoLink: '#',
       codeLink: '#'
     },
     {
       id: 6,
-      title: 'Chat Application',
-      description: 'Real-time chat application with private and group messaging',
-      image: 'https://via.placeholder.com/600x400',
-      tags: ['React', 'Socket.io', 'Node.js'],
+      title: 'Phonebook App',
+      description: 'A simple phonebook application',
+      image: PhonebookImg,
+      tags: ['Javascript', 'Tailwind', 'Node.js'],
       demoLink: '#',
       codeLink: '#'
     }

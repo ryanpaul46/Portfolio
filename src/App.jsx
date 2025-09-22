@@ -8,7 +8,7 @@ import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (darkMode) {

@@ -31,16 +31,16 @@ const About = () => {
         <div className="col-md-7">
           <h3 className="mb-4">Web Developer & Designer</h3>
           <p className="lead mb-4 text-justify">
-            I’m Ryan Paul Collado, an IT Specialist from Pangasinan. 
-            I combine tech expertise in computer systems, networking, and full-stack web development with creative skills in graphic design, video editing, 
-            and photography. With certifications in Civil Service Professional Eligibility and TESDA Computer Systems Servicing NC II, 
-            I bring both technical reliability and creative innovation to every project I take on.I build systems that work and designs that inspire.
+            I’m Ryan Paul Collado, an IT Specialist from Pangasinan with a passion for blending technology and creativity. 
+            My expertise spans computer systems, networking, and full-stack web development, complemented by strong creative skills in graphic design, video editing, and photography. 
+            With certifications in Civil Service Professional Eligibility and TESDA Computer Systems Servicing NC II, I bring both technical reliability and innovative design thinking to every project.
+            I build systems that perform seamlessly and craft designs that leave lasting impressions. 
           </p>
           
           <p className="mb-4 text-justify">
-            My journey in web development began several years ago, and since then, I've worked on various projects 
-            ranging from simple landing pages to complex web applications. I enjoy the process of turning ideas into 
-            reality through code and design.
+            My journey in web development began several years ago, evolving from simple landing pages to dynamic, full-scale web applications. 
+            What drives me is the challenge of transforming ideas into functional, visually engaging digital solutions.
+            Whether it’s solving complex IT problems or creating designs that inspire, I am committed to delivering work that is both efficient and impactful.
           </p>
           
           <div className="row mb-4">

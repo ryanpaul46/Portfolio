@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -34,27 +35,24 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   const handleNavClick = (e, id) => {
     e.preventDefault();
     setActiveLink(id);
-    
-    // Close mobile menu when a link is clicked
-    const navbarToggler = document.querySelector('.navbar-toggler');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    
-    if (navbarCollapse.classList.contains('show')) {
-      navbarToggler.click();
-    }
+    setIsOpen(false);
     
     // Smooth scroll to section
     document.querySelector(`#${id}`).scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
     <nav className={`navbar navbar-expand-lg navbar-${darkMode ? 'dark' : 'light'} ${scrolled ? (darkMode ? 'bg-dark shadow' : 'bg-white shadow-sm') : 'bg-transparent'} fixed-top transition-all`}>
       <div className="container">
         <a className="navbar-brand fw-bold" href="#home" onClick={(e) => handleNavClick(e, 'home')}>Portfolio</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" onClick={toggleMenu} aria-controls="navbarNav" aria-expanded={isOpen} aria-label="Toggle navigation">
+          <span className={`navbar-toggler-icon ${isOpen ? 'collapsed' : ''}`}></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a 

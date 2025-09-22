@@ -78,7 +78,7 @@ const Contact = () => {
       </div>
 
       <div className="row justify-content-center">
-        <div className="col-md-6">
+        <div className="col-md-8">
           {formStatus.message && (
             <div className={`alert ${formStatus.isError ? 'alert-danger' : 'alert-success'} mb-4`} role="alert">
               {formStatus.message}
@@ -141,59 +141,14 @@ const Contact = () => {
               Send Message
             </button>
           </form>
-        </div>
 
-        <div className="col-md-5 offset-md-1 mt-5 mt-md-0">
-          <div className="card shadow h-100">
-            <div className="card-body">
-              <h3 className="h4 mb-4">Contact Information</h3>
-              
-              <div className="d-flex mb-3">
-                <div className="contact-icon me-3">
-                  <i className="bi bi-geo-alt-fill text-primary fs-4"></i>
-                </div>
-                <div>
-                  <h4 className="h6 mb-1">Location</h4>
-                  <p>San Isidro Norte, Binmaley, Pangasinan</p>
-                </div>
-              </div>
-              
-              <div className="d-flex mb-3">
-                <div className="contact-icon me-3">
-                  <i className="bi bi-envelope-fill text-primary fs-4"></i>
-                </div>
-                <div>
-                  <h4 className="h6 mb-1">Email</h4>
-                  <p>ryanpaul46@gmail.com</p>
-                </div>
-              </div>
-              
-              <div className="d-flex mb-3">
-                <div className="contact-icon me-3">
-                  <i className="bi bi-telephone-fill text-primary fs-4"></i>
-                </div>
-                <div>
-                  <h4 className="h6 mb-1">Phone</h4>
-                  <p>(+63) 947-3195433</p>
-                </div>
-              </div>
-              
-              <div className="d-flex mb-3">
-                <div className="contact-icon me-3">
-                  <i className="bi bi-globe text-primary fs-4"></i>
-                </div>
-                <div>
-                  <h4 className="h6 mb-1">Website</h4>
-                  <p>https://ryanpaul46.github.io/Portfolio/</p>
-                </div>
-              </div>
-              
-              <h4 className="h5 mt-4 mb-3">Follow Me</h4>
-              <div className="d-flex social-links">
+          <div className="card shadow mt-4">
+            <div className="card-body text-center">
+              <h3 className="h4 mb-4">Follow Me</h3>
+              <div className="d-flex social-links justify-content-center">
                 <a href="https://github.com/ryanpaul46" className="me-3 text-dark fs-4"><i className="bi bi-github"></i></a>
                 <a href="https://www.facebook.com/rpcollado.46" className="me-3 text-dark fs-4"><i className="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/rpcollado/" className="me-3 text-dark fs-4"><i className="bi bi-instagram"></i></a>
-                
               </div>
             </div>
           </div>

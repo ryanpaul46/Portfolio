@@ -182,3 +182,34 @@ body.dark .btn-outline-dark:hover {
 body.dark .badge {
   color: #ffffff !important;
 }
+.navbar .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover in light mode */
+.navbar-light .nav-link:hover {
+  color: var(--bs-primary) !important;
+}
+
+/* Hover in dark mode */
+body.dark .navbar .nav-link:hover {
+  color: #ffc107 !important; /* Yellow in dark mode */
+}
+
+/* Underline animation */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.underline::after {
+  width: 100%;
+}

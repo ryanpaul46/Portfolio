@@ -46,11 +46,8 @@ const About = () => {
           <div className="row mb-4">
             <div className="col-md-6 text-center text-md-start">
               <p><strong>Name:</strong> Ryan Paul C. Collado</p>
-              <p><strong>Experience:</strong> 4 Years</p>
-
-            </div>
-            <div className="col-md-6 text-center text-md-start">
               <p><strong>Degree:</strong> Bachelor of Science in Information Technology</p>
+              <p><strong>Experience:</strong> 4 Years</p>
               <p><strong>Email:</strong> ryanpaul46@gmail.com</p>
               <p><strong>Freelance:</strong> Available</p>
             </div>

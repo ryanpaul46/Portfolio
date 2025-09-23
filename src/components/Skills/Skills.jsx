@@ -81,7 +81,7 @@ const Skills = () => {
 
       <div className="row mt-5">
         <div className="col-12 text-center">
-          <h3 className="h4 mb-4">Additional Skills & Certifications</h3>
+          <h3 className="h4 mb-4">Technologies and Certifications</h3>
           <div className="d-flex flex-wrap justify-content-center gap-2">
              {/* Frontend */}
             <span className="badge bg-primary p-2">Responsive Design</span>

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import LogoBlkImg from '../../assets/images/Logo-black.png';
+import LogoWhtImg from '../../assets/images/Logo-white.png';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [activeLink, setActiveLink] = useState('home');
@@ -48,7 +50,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <nav className={`navbar navbar-expand-lg navbar-${darkMode ? 'dark' : 'light'} ${scrolled ? (darkMode ? 'bg-dark shadow' : 'bg-white shadow-sm') : 'bg-transparent'} fixed-top transition-all`}>
       <div className="container">
-        <a className="navbar-brand fw-bold" href="#home" onClick={(e) => handleNavClick(e, 'home')}>Portfolio</a>
+        <a className="navbar-brand fw-bold" href="#home" onClick={(e) => handleNavClick(e, 'home')}>
+         <img 
+            src={darkMode ? LogoWhtImg : LogoBlkImg} 
+            alt="Logo" 
+            style={{ height: '40px', width: '70px' }} 
+            className="me-2"
+           />
+          </a>
         <button className="navbar-toggler" type="button" onClick={toggleMenu} aria-controls="navbarNav" aria-expanded={isOpen} aria-label="Toggle navigation">
           <span className={`navbar-toggler-icon ${isOpen ? 'collapsed' : ''}`}></span>
         </button>
